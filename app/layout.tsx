@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { ThemeModeScript } from "flowbite-react";
+import { Flowbite, ThemeModeScript } from "flowbite-react";
 import "./globals.css";
 import Head from "next/head"
 
@@ -20,12 +20,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Head>
-        <ThemeModeScript />
-        
-      </Head>
+      <head  >
+        <ThemeModeScript />        
+      </head>
       
-      <body className={inter.className}>
+      <body className='dark:bg-[#e6dec7] dark:text-[#5f4a37] ' >
         <NavBar />
         {children}
       </body>

@@ -9,7 +9,22 @@ const config: Config = {
     flowbite.content(),
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        gray: {
+          50: "#f7f6ff",
+          100: "#eeecfe",
+          200: "#d5d1fd",
+          300: "#bbb5fb",
+          400: "#fff",
+          500: "#656524",
+          600: "#6f3134",
+          700: "#85664c",
+          800: "#5f4a37",
+          900: "#6f4520",
+        },
+      }
+    },
   },
   plugins: [flowbite.plugin()],
 };
